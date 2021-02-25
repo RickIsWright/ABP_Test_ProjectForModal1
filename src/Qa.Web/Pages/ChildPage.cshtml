@@ -1,0 +1,16 @@
+﻿@page
+@using Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Modal
+@model Qa.Web.Pages.ChildPage
+
+<script src="/Pages/ChildPage.js"></script>
+
+<form method="post" action="@Url.Page("/Pages/ChildPage")">
+    <abp-modal>
+        <abp-modal-header title="Child page"></abp-modal-header>
+        <abp-modal-body>
+            Hello World
+        </abp-modal-body>
+        <abp-modal-footer buttons="@AbpModalButtons.Save | @AbpModalButtons.Cancel"></abp-modal-footer>
+    </abp-modal>
+</form>
+
